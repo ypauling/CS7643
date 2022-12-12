@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{salvador2017learning}
+Amaia Salvador, Nicholas Hynes, Yusuf Aytar, Javier Marin, Ferda Ofli, Ingmar
+  Weber, and Antonio Torralba.
+\newblock Learning cross-modal embeddings for cooking recipes and food images.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, 2017.
+
+\bibitem{bossard14}
+Lukas Bossard, Matthieu Guillaumin, and Luc Van~Gool.
+\newblock Food-101 -- mining discriminative components with random forests.
+\newblock In {\em European Conference on Computer Vision}, 2014.
+
+\bibitem{marin2019learning}
+Javier Marin, Aritro Biswas, Ferda Ofli, Nicholas Hynes, Amaia Salvador, Yusuf
+  Aytar, Ingmar Weber, and Antonio Torralba.
+\newblock Recipe1m+: A dataset for learning cross-modal embeddings for cooking
+  recipes and food images.
+\newblock {\em {IEEE} Trans. Pattern Anal. Mach. Intell.}, 2019.
+
+\end{thebibliography}

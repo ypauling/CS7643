@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+
+\title{CS7643 Final Project Proposal}
+\author{Sai Chen schen721@gatech.edu \\
+Ruiyang Li rli386@gatech.edu \\
+Shiya Song ssong331@gatech.edu \\
+Bing Yang byang322@gatech.edu}
+\date{October 20th, 2021}
+
+\begin{document}
+\maketitle
+
+\section{Team Name}
+CS7643 Food Images to Recipe Group (FIRG)
+
+\section{Project Title}
+\textbf{\textit{Use Joint Embedding to Transform Food Images to Recipes}}
+
+\section{Project Summary}
+In this project, our goal is to build a deep learning model for transforming food images to the matching cooking recipes.  The recipe here contains both the ingredients as well as the instructions to cook the food.  We will implement the model described in \cite{salvador2017learning}.  We plan to make some modifications listed below and evaluate the performance on several related datasets.
+
+\section{Approach}
+The model we are going to implement is from \cite{salvador2017learning}.  The basic idea is to build a joint embedding model to project the cooking recipes and the associated food images into a common space during training.  We will use the Recipe1M dataset to train our model.  Specifically, we will do the following during training:
+\begin{enumerate}
+\item Use transfer learning to extract features from food images using existing image classification models.
+\item Use various \underline{L}ong \underline{S}hort-\underline{T}erm \underline{M}emory (LSTM) models to extract representations of ingredients and cooking instructions in cooking recipes.
+\item Matching the above two learned representations by minimizing the cosine differences between them.
+\end{enumerate}
+Besides what have been done in the paper \cite{salvador2017learning}, we plan to make following modifications
+\begin{enumerate}
+\item Try different state-of-art image classification models to evaluate the influence on the performance.
+\item Quantify the performance on different recipe datasets (Food-101, Chefkoch.de) to evaluate the generalizability of the model.
+\end{enumerate}
+
+\section{Related work}
+Recipe extraction from food images has been formulated as an image classification problem before \cite{bossard14}.  It is found that the limiting factor in this problem is the size of the dataset used for training deep learning models \cite{salvador2017learning}.  We mainly use ideas and dataset from \cite{salvador2017learning, marin2019learning}.
+
+\section{Dataset}
+The main dataset for training is Recipe1M (\url{http://pic2recipe.csail.mit.edu/}).  The two additional datasets we want to use are listed below.
+\begin{itemize}
+\item Food-101: \url{https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/}
+\item Chefkoch.de: \url{https://towardsdatascience.com/this-ai-is-hungry-b2a8655528be}
+\end{itemize}
+
+\section{Group Members}
+\begin{itemize}
+\item{Sai Chen, schen721}
+\item{Ruiyang Li, rli386}
+\item{Shiya Song, ssong331}
+\item{Bing Yang, byang322}
+\end{itemize}
+
+\bibliographystyle{unsrt}
+\bibliography{CS7643_Proposal}
+
+\end{document}

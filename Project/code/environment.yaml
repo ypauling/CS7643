@@ -1,0 +1,17 @@
+name: CS7643-project
+channels:
+  - defaults
+dependencies:
+  - word2vec
+  - numpy
+  - scipy==1.1.0
+  - pillow
+  - lmdb
+  - scikit-learn
+  - tqdm
+  - nltk
+  - simplejson
+
+# Need to install following packages
+# conda install -c pytorch pytorch torchvision
+# conda install -c conda-forge torchfile
