@@ -1,7 +1,0 @@
-{
-    "python.linting.flake8Args": [
-        "--max-line-length=120",
-        "--ignore=F401,W504,F405,F403",
-    ],
-    "editor.wordWrapColumn": 100,
-}
